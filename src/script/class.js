@@ -11,17 +11,17 @@ export class BigEvent {
     this.updateDynamicValues();
   };
 
-  prepareStaticHtml = () => {
-    const majorDiv = document.querySelector(".main");
-
-    this.mainDiv = document.createElement("div");
-    this.mainDiv.classList.add("big-event-container");
+prepareStaticHtml = () => {
+    const majorDiv = document.querySelector('.main')
 
     this.header = document.createElement("h2");
     this.header.classList.add("big-event-header");
 
-    this.description = document.createElement("p");
-    this.description.classList.add("big-event-description");
+    this.eventContent = document.createElement('div')
+    this.eventContent.classList.add('event--content')
+
+    this.header = document.createElement('h2')
+    this.header.classList.add('big-event-header')
 
     this.button = document.createElement("button");
     this.button.classList.add("big-event-button");
@@ -32,12 +32,26 @@ export class BigEvent {
     this.img.src = `${this.img}`;
     this.img.alt = "Photo of main event";
 
-    majorDiv.appendChild(this.mainDiv);
-    this.mainDiv.appendChild(this.header);
-    this.mainDiv.appendChild(this.img);
-    this.mainDiv.appendChild(this.description);
-    this.mainDiv.appendChild(this.button);
-  };
+    this.img = document.createElement('img')
+    this.img.classList.add('big-event-img')
+    this.img.src = `${this.img}`
+    this.img.alt = 'Photo of main event'
+    
+    majorDiv.appendChild(this.mainDiv)
+    this.mainDiv.appendChild(this.eventContent)
+    this.eventContent.appendChild(this.header)
+    this.mainDiv.appendChild(this.img)
+    this.eventContent.appendChild(this.description)
+    this.mainDiv.appendChild(this.button)
+}
+
+attachStaticEventListeners = () => {
+
+}
+
+updateDynamicValues = () => {
+
+}
 
   attachStaticEventListeners = () => {};
 
