@@ -1,5 +1,5 @@
-import { BigEvent } from "./class";
-import { SmallEvent } from "./class";
+//import { BigEvent } from "./class";
+//import { SmallEvent } from "./class";
 
 
 let showMeName;
