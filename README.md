@@ -1,6 +1,7 @@
 # Events-registration-page
 Hackathon #2
 
+API Link : https://test-api.codingbootcamp.cz
 
 Event
 API1 : /api/041ebfe9/events
