@@ -88,3 +88,34 @@
   align-self: flex-end;
   margin-bottom: 1%;
 }
+
+.small-event-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 250px;
+  // margin-left: 15%;
+  // margin-right: 15%;
+  // border: 1px solid black;
+  // border-radius: 15px;
+  // background-color: lightgray;
+}
+
+.small-event-box {
+  width: 30%;
+  // margin-left: 15%;
+  // margin-right: 15%;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+.small-div-header {
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.small-event-button {
+  align-self: flex-end;
+  margin-bottom: 1%;
+}

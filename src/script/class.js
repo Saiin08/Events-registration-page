@@ -80,23 +80,21 @@ export class SmallEvent {
     this.smallDivBox = document.createElement("div");
     this.smallDivBox.classList.add("small-event-box");
 
-    this.header = document.createElement("h2");
-    this.header.classList.add("small-div-header");
+    this.headerH2 = document.createElement("h2");
+    this.headerH2.classList.add("small-div-header");
+    this.headerH2.textContent = `${this.header}`;
 
     this.button = document.createElement("button");
     this.button.textContent = "More";
-    this.classList.add("small-event-button");
+    this.button.classList.add("small-event-button");
 
     majorDiv.appendChild(this.smallDiv);
     this.smallDiv.appendChild(this.smallDivBox);
-    this.smallDivBox.appendChild(this.header);
+    this.smallDivBox.appendChild(this.headerH2);
     this.smallDivBox.appendChild(this.button);
   };
 
-  attachStaticEventListeners = () => {
-    this.button = document.querySelector(".small-event-button");
-    this.button.addEventListener("click", () => {});
-  };
+  attachStaticEventListeners = () => {};
 
   updateDynamicValues = () => {};
 }

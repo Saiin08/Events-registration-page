@@ -28,5 +28,9 @@ const eventsList = async () => {
   console.log(showMeDescription);
   console.log(showMeImg);
   const mainEl = new BigEvent(showMeName, showMeDescription, showMeImg);
+  const secondEl = new SmallEvent(showMeName);
+  const secondEl2 = new SmallEvent(showMeName);
+  const secondEl3 = new SmallEvent(showMeName);
 };
+
 eventsList();
